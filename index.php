@@ -66,7 +66,7 @@
         ?>
                <div class="post">
                 <div class="post-image">
-                    <img src="../voiceup/user/<?php echo $res['i_img1'];?>" alt="">
+                    <img src="https://hack-voiceup.herokuapp.com/user/<?php echo $res['i_img1'];?>" alt="">
                 </div>
                 <div class="post-content">
                     <p class="post-date">Posted on <?php echo $res['i_date'];  ?></p>
