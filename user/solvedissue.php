@@ -66,7 +66,7 @@ error_reporting(0);
     </nav>
 
     <?php
-     $con = mysqli_connect("lbbdpklnafwiw9pb9rhb2-mysql.services.clever-cloud.com", "uttrd2cgktfzdsye", "wtpltLGKuSJnqNr78d13", "bbdpklnafwiw9pb9rhb2");
+     $con = mysqli_connect("sql6.freesqldatabase.com", "sql6424236", "m7r3yyZ1Jr", "sql6424236");
     if (!$con) {
         die(" Connection Error ");
     }
@@ -152,7 +152,7 @@ error_reporting(0);
 
         <?php
 
-        $con = mysqli_connect("lbbdpklnafwiw9pb9rhb2-mysql.services.clever-cloud.com", "uttrd2cgktfzdsye", "wtpltLGKuSJnqNr78d13", "bbdpklnafwiw9pb9rhb2");
+        $con = mysqli_connect("sql6.freesqldatabase.com", "sql6424236", "m7r3yyZ1Jr", "sql6424236");
 
         $count = $con->query("select * from issue i,user u where u.u_mobile=".$u_mobile." and u.u_id=i.i_u_id and i.i_status=1")->num_rows;
         if($count==0){ ?>

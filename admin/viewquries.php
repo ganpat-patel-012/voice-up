@@ -4,7 +4,7 @@ include('session-script.php');
 $res = $_SESSION["sessionid"];
 $a_name = $res;
 
-$con = mysqli_connect("lbbdpklnafwiw9pb9rhb2-mysql.services.clever-cloud.com", "uttrd2cgktfzdsye", "wtpltLGKuSJnqNr78d13", "bbdpklnafwiw9pb9rhb2");
+$con = mysqli_connect("sql6.freesqldatabase.com", "sql6424236", "m7r3yyZ1Jr", "sql6424236");
 
 if (!isset($_SESSION['login_admin'])) {
     header("location: login.php"); // Redirecting To Profile Page
@@ -82,7 +82,7 @@ if (!isset($_SESSION['login_admin'])) {
 
 							 <?php
 								
-								$con = mysqli_connect("lbbdpklnafwiw9pb9rhb2-mysql.services.clever-cloud.com", "uttrd2cgktfzdsye", "wtpltLGKuSJnqNr78d13", "bbdpklnafwiw9pb9rhb2");
+								$con = mysqli_connect("sql6.freesqldatabase.com", "sql6424236", "m7r3yyZ1Jr", "sql6424236");
 								   
 								$q = "select * from contactus ";
 
