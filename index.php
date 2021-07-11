@@ -48,7 +48,7 @@
 
     <?php
 
-        $con = mysqli_connect("localhost", "root", "", "voiceup");
+        $con = mysqli_connect("lbbdpklnafwiw9pb9rhb2-mysql.services.clever-cloud.com", "uttrd2cgktfzdsye", "wtpltLGKuSJnqNr78d13", "bbdpklnafwiw9pb9rhb2");
         
         $count = $con->query("SELECT * from issue,user where u_id=i_u_id and i_privacy='Public'")->num_rows;
         if($count==0){ ?>

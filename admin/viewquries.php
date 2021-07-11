@@ -4,7 +4,7 @@ include('session-script.php');
 $res = $_SESSION["sessionid"];
 $a_name = $res;
 
-$con = mysqli_connect("localhost", "root", "", "voiceup");
+$con = mysqli_connect("lbbdpklnafwiw9pb9rhb2-mysql.services.clever-cloud.com", "uttrd2cgktfzdsye", "wtpltLGKuSJnqNr78d13", "bbdpklnafwiw9pb9rhb2");
 
 if (!isset($_SESSION['login_admin'])) {
     header("location: login.php"); // Redirecting To Profile Page
@@ -82,9 +82,7 @@ if (!isset($_SESSION['login_admin'])) {
 
 							 <?php
 								
-								$con = mysqli_connect('localhost','root');
-
-								mysqli_select_db($con,'voiceup');
+								$con = mysqli_connect("lbbdpklnafwiw9pb9rhb2-mysql.services.clever-cloud.com", "uttrd2cgktfzdsye", "wtpltLGKuSJnqNr78d13", "bbdpklnafwiw9pb9rhb2");
 								   
 								$q = "select * from contactus ";
 

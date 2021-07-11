@@ -5,7 +5,7 @@ if (!isset($_SESSION['login_user'])) {
     header("location: login.php"); // Redirecting To Profile Page
 }
 error_reporting(0);
-$con = mysqli_connect("localhost", "root", "", "voiceup");
+$con = mysqli_connect("lbbdpklnafwiw9pb9rhb2-mysql.services.clever-cloud.com", "uttrd2cgktfzdsye", "wtpltLGKuSJnqNr78d13", "bbdpklnafwiw9pb9rhb2");
 
         $q = "SELECT * from user where u_mobile=$res ";
         $query = mysqli_query($con, $q);

@@ -1,12 +1,6 @@
 <?php
 error_reporting(0);
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "voiceup";
-
-//Create Connection
-$con = new mysqli($dbhost, $dbuser, $dbpass, $dbname) or die($con->connect_error);
+$con = mysqli_connect("lbbdpklnafwiw9pb9rhb2-mysql.services.clever-cloud.com", "uttrd2cgktfzdsye", "wtpltLGKuSJnqNr78d13", "bbdpklnafwiw9pb9rhb2");
 
 if (isset($_POST["submit"])) {
     #retrieve file title
